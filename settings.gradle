@@ -1,3 +1,5 @@
-include ':main'
-
-
+include ':app',
+        ':core',
+        ':api',
+        ':login',
+        ':main'

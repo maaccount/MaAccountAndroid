@@ -1,17 +1,16 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 
 android {
 
     compileSdkVersion versions.compileSdkVersion
     buildToolsVersion versions.buildToolsVersion
-    resourcePrefix("main_")
 
     defaultConfig {
+        applicationId "com.xyz.maaccount"
         minSdkVersion versions.minSdkVersion
         targetSdkVersion versions.targetSdkVersion
         versionCode versions.appVersionCode
         versionName versions.appVersionName
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -25,7 +24,6 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':api')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation project(':login')
+    implementation project(':main')
 }

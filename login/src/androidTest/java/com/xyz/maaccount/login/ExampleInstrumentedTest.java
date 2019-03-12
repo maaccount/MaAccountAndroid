@@ -1,4 +1,4 @@
-package com.xyz.maaccount.main;
+package com.xyz.maaccount.login;
 
 import android.content.Context;
 
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 import androidx.test.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.xyz.maaccount.main.test", appContext.getPackageName());
+        assertEquals("com.xyz.maaccount.login.test", appContext.getPackageName());
     }
 }

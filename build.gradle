@@ -26,7 +26,6 @@ task clean(type: Delete) {
 }
 
 ext {
-    // app 相关版本控制
     versions = [
             minSdkVersion    : 21,
             targetSdkVersion : 28,
@@ -36,10 +35,5 @@ ext {
 
             appVersionCode   : 1,
             appVersionName   : "1.0.0"
-    ]
-
-    // 依赖相关版本控制
-    depVersion = [
-            appcompatVersion: "1.0.2",
     ]
 }

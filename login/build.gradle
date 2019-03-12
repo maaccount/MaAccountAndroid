@@ -4,7 +4,7 @@ android {
 
     compileSdkVersion versions.compileSdkVersion
     buildToolsVersion versions.buildToolsVersion
-    resourcePrefix("main_")
+    resourcePrefix("login_")
 
     defaultConfig {
         minSdkVersion versions.minSdkVersion
